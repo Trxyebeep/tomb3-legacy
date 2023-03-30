@@ -1,0 +1,812 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="game">
+      <UniqueIdentifier>{2e4d93a6-5216-421b-8431-6806003378e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3dsystem">
+      <UniqueIdentifier>{8d230514-e19c-4dfb-b711-9007b5d89bb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tomb3">
+      <UniqueIdentifier>{24c18780-4529-4184-96ed-d189a40626e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="global">
+      <UniqueIdentifier>{bab0db94-eb02-45db-aa8d-5dc0ef7bc6bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="newstuff">
+      <UniqueIdentifier>{ee9907b0-b3a2-4921-95b4-a060b78a587c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="specific">
+      <UniqueIdentifier>{553eeac3-3fba-4566-b320-5f07b46ec650}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="tomb3\game\51baton.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\51civvy.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\51laser.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\51rocket.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\armysmg.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\autogun.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\biggun.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\bird.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\boat.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\blowpipe.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\box.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\boomute.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\camera.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\cinema.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\clawmute.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\cleaner.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\cobra.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\collide.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\compy.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\control.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\croc.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\demo.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\display.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\diver.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\dog.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\dragfire.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\draw.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\effect2.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\effects.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\firehead.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\fish.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\flamer.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\flymaker.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\footprnt.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\fusebox.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\gameflow.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\hair.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\health.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\hybrid.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\inventry.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\invfunc.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\items.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\kayak.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\lara.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\lara1gun.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\lara2gun.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\laraclmb.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\laraelec.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\larafire.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\laraflar.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\laramisc.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\larasurf.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\laraswim.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\lasers.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\winston.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\wingmute.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\willboss.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\triboss.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\tribeaxe.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\trex.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\traps.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\train.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\tonyboss.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\tiger.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\text.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\target.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\swat.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\sub.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\sphere.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\sound.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\shiva.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\setup.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\sealmute.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\savegame.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\rat.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\raptor.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\rapmaker.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\quadbike.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\punk.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\prisoner.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\pickup.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\orca.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\oilsmg.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\oilred.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\objlight.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\objects.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\mpgun.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\moveblok.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\monkey.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\missile.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\minecart.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\lot.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\londsec.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\londboss.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\lizman.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\3dsystem\3d_gen.h">
+      <Filter>3dsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\3dsystem\hwinsert.h">
+      <Filter>3dsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\3dsystem\phd_math.h">
+      <Filter>3dsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\3dsystem\scalespr.h">
+      <Filter>3dsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\tomb3\pch.h">
+      <Filter>tomb3</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\tomb3\framework.h">
+      <Filter>tomb3</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\game\people.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\global\math_tbls.h">
+      <Filter>global</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\global\types.h">
+      <Filter>global</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="tomb3\specific\audio.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\dd.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\di.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\drawbars.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\draweffects.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\drawprimitive.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\ds.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\dxdialog.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\dxshell.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\file.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\fmv.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\frontend.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\game.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\hwrender.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\init.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\input.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\litesrc.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\option.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\output.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\picture.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\smain.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\specific.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\texture.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\time.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\transform.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\utils.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+    <ClInclude Include="tomb3\specific\winmain.h">
+      <Filter>specific</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tomb3\game\51baton.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\51civvy.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\51laser.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\51rocket.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\armysmg.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\autogun.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\biggun.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\bird.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\blowpipe.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\boat.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\boomute.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\box.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\camera.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\cinema.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\clawmute.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\cleaner.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\cobra.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\collide.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\compy.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\control.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\croc.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\demo.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\diver.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\dog.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\dragfire.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\draw.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\effect2.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\effects.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\firehead.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\fish.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\flamer.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\flymaker.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\footprnt.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\fusebox.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\gameflow.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\hair.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\health.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\hybrid.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\inventry.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\invfunc.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\items.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\kayak.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\lara.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\lara1gun.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\lara2gun.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\laraclmb.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\laraelec.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\larafire.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\laramisc.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\laraflar.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\larasurf.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\laraswim.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\lasers.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\lizman.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\londboss.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\londsec.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\lot.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\missile.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\minecart.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\monkey.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\moveblok.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\mpgun.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\objects.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\oilred.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\objlight.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\oilsmg.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\orca.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\people.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\pickup.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\prisoner.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\punk.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\quadbike.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\rapmaker.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\raptor.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\rat.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\savegame.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\sealmute.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\setup.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\shiva.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\sound.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\sphere.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\sub.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\swat.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\target.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\text.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\tiger.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\tonyboss.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\train.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\traps.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\trex.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\tribeaxe.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\triboss.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\willboss.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\wingmute.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\game\winston.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\3dsystem\3d_gen.cpp">
+      <Filter>3dsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\3dsystem\hwinsert.cpp">
+      <Filter>3dsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\3dsystem\scalespr.cpp">
+      <Filter>3dsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\3dsystem\phd_math.cpp">
+      <Filter>3dsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\tomb3\pch.cpp">
+      <Filter>tomb3</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\audio.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\dd.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\di.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\display.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\drawbars.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\draweffects.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\drawprimitive.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\ds.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\dxdialog.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\dxshell.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\file.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\fmv.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\frontend.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\game.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\hwrender.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\init.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\input.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\litesrc.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\option.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\output.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\picture.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\smain.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\specific.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\texture.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\time.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\transform.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\utils.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+    <ClCompile Include="tomb3\specific\winmain.cpp">
+      <Filter>specific</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="tomb3.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="setup.bmp" />
+    <Image Include="icon.ico" />
+  </ItemGroup>
+</Project>
