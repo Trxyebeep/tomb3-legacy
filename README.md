@@ -1,21 +1,8 @@
-# tomb3
-## PC Tomb Raider 3 decompilation project
+# TOMB3 Legacy
+Fork of [tomb3](https://github.com/Trxyebeep/TOMB3) for the purpose of preserving the original Tomb Raider 3 source code.
+- All fixes and unoriginal code were removed, with a few exceptions:
+1) Things that fail the compilation process, or crash the game otherwise, such as uninitialized vars.
+2) The software renderer.
+3) FMV stuff.
 
-Inspired by [TR2Main](https://github.com/Arsunt/TR2Main/), made by Arsunt. 
-
-from the makers of [TOMB5](https://github.com/Trxyebeep/TOMB5) and [TOMB4](https://github.com/Trxyebeep/TOMB4) The TR5/4 decompilation projects.
-
-### goals
-Preserving the original source code of the PC version of Tomb Raider 3.
-
-### Credits:
-Troye: Main decompilation effort, main developer.
-
-ChocolateFan: Additional decompilation and development.
-
-Arsunt: for the amazing TR2Main and allowing us to use his code for some features.
-
-Lahm86: for the amazing config tool.
-
-### License:
-This project is licensed under the GNU General Public License - see the [LICENSE](https://github.com/Trxyebeep/tomb3/blob/master/LICENSE.md) file for details
+Everything else is original and should behave exactly as the retail TR3 executable.
