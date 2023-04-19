@@ -642,6 +642,7 @@ void DXGetDeviceInfo(DEVICEINFO* device, HWND hWnd, HINSTANCE hInstance)
 {
 	LPDIRECTINPUTX lpDinput;
 
+	G_hwnd = hWnd;
 #if 0
 	ulong maxCPUID, processorType, info, features, unk1, unk2;
 	char name[13];
@@ -652,7 +653,6 @@ void DXGetDeviceInfo(DEVICEINFO* device, HWND hWnd, HINSTANCE hInstance)
 	features = 0;
 	unk1 = 0;
 	unk2 = 0;
-	G_hwnd = hWnd;
 	memset(device, 0, sizeof(DEVICEINFO));
 
 	//MMX check...
