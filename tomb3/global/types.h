@@ -1352,7 +1352,7 @@ struct WINAPP
 	LPDIRECT3DMATERIALX lpViewPortMaterial;
 	LPDIRECTDRAWPALETTE Palette;
 	PALETTEENTRY PaletteEntries[257];
-	bool bFocus;
+	volatile bool bFocus;
 	long nRenderMode;
 	long nUVAdd;
 	ulong nFrames;
