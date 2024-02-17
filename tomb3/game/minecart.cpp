@@ -119,7 +119,7 @@ static long CanGetOut(long lr)
 	floor = GetFloor(x, y, z, &room_number);
 	h = GetHeight(floor, x, y, z);
 
-	if (height_type != BIG_SLOPE && height_type != DIAGONAL && h != NO_HEIGHT && abs(h) > 512)
+	if (height_type != BIG_SLOPE && height_type != DIAGONAL && h != NO_HEIGHT && abs(h - item->pos.y_pos) <= 512)
 	{
 		c = GetCeiling(floor, x, y, z);
 
