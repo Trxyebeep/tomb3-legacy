@@ -297,7 +297,7 @@ static void DoUserInput(ITEM_INFO* item, ITEM_INFO* l, CARTINFO* cart)
 			l->pos.y_rot = item->pos.y_rot + 0x4000;
 			l->pos.z_rot = 0;
 			l->anim_number = 11;
-			l->frame_number = anims[VEHICLE_ANIM].frame_base;
+			l->frame_number = anims[l->anim_number].frame_base;
 			l->current_anim_state = 2;
 			l->goal_anim_state = 2;
 			lara.skidoo = NO_ITEM;
@@ -321,7 +321,7 @@ static void DoUserInput(ITEM_INFO* item, ITEM_INFO* l, CARTINFO* cart)
 			l->pos.y_rot = item->pos.y_rot - 0x4000;
 			l->pos.z_rot = 0;
 			l->anim_number = 11;
-			l->frame_number = anims[VEHICLE_ANIM].frame_base;
+			l->frame_number = anims[l->anim_number].frame_base;
 			l->current_anim_state = 2;
 			l->goal_anim_state = 2;
 			lara.skidoo = NO_ITEM;
