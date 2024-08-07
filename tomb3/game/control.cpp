@@ -31,6 +31,7 @@
 #include "health.h"
 
 ITEM_INFO* items;
+ITEM_INFO* CeilingObject;
 ANIM_STRUCT* anims;
 ROOM_INFO* room;
 short** meshes;
@@ -1398,6 +1399,7 @@ long GetCeiling(FLOOR_INFO* floor, long x, long y, long z)
 	long xoff, yoff, height, h1, h2, ch1, ch2;
 	short* data, type, trigger, dx, dz, t0, t1, t2, t3, hadj, ended;
 
+	CeilingObject = 0;
 	f = floor;
 
 	while (f->sky_room != NO_ROOM)

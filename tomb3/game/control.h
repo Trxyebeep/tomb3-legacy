@@ -28,6 +28,7 @@ long CheckNoColCeilingTriangle(FLOOR_INFO* floor, long x, long z);
 long IsRoomOutside(long x, long y, long z);
 
 extern ITEM_INFO* items;
+extern ITEM_INFO* CeilingObject;
 extern ANIM_STRUCT* anims;
 extern ROOM_INFO* room;
 extern short** meshes;

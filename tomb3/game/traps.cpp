@@ -1089,7 +1089,10 @@ long OnTrapDoor(ITEM_INFO* item, long x, long z)
 void TrapDoorCeiling(ITEM_INFO* item, long x, long y, long z, long* h)
 {
 	if (OnTrapDoor(item, x, z) && y > item->pos.y_pos && !item->current_anim_state && item->pos.y_pos > *h)
+	{
 		*h = item->pos.y_pos + 256;
+		CeilingObject = item;
+	}
 }
 
 void TrapDoorFloor(ITEM_INFO* item, long x, long y, long z, long* h)
