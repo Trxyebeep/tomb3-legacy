@@ -20,7 +20,7 @@ void InitialiseHair()
 {
 	long* bone;
 
-	bone = &bones[objects[HAIR].bone_index + 2];
+	bone = &bones[objects[HAIR].bone_index];
 	first_hair = 1;
 	hair[0].x_rot = -0x4000;
 	hair[0].y_rot = 0;
