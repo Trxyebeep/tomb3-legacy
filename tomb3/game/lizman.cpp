@@ -232,7 +232,7 @@ void LizManControl(short item_number)
 			}
 			else if (info.bite && info.distance < 0x90000)
 				item->goal_anim_state = LIZMAN_AIM1;
-			else if (Targetable(item, &info) && info.distance < 0x640000 && (lara.poisoned < 256 || boxes[lizman->enemy->box_number].overlap_index & 0x8000))
+			else if (Targetable(item, &info) && info.bite && info.distance < 0x640000 && (lara.poisoned < 256 || boxes[lizman->enemy->box_number].overlap_index & 0x8000))
 				item->goal_anim_state = LIZMAN_AIM0;
 			else
 				item->goal_anim_state = LIZMAN_RUN;
@@ -345,6 +345,8 @@ void LizManControl(short item_number)
 				item->pos.y_rot -= 728;
 			else
 				item->pos.y_rot += 728;
+
+			lizman->flags = 0;
 
 			if (info.bite && info.distance < 0x640000 && (lara.poisoned < 256 || boxes[lizman->enemy->box_number].overlap_index & 0x8000))
 				item->goal_anim_state = LIZMAN_PUNCH0;
