@@ -366,7 +366,7 @@ static void TriggerExhaustSmoke(long x, long y, long z, short angle, long speed,
 {
 	SPARKS* sptr;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = 0;
 	sptr->sG = 0;
@@ -1262,7 +1262,7 @@ static long UserControl(ITEM_INFO* item, long height, long* pitch)
 		else
 			quad->Velocity = 0;
 
-		if (HandbrakeStarting && quad->Revs && !(input & IN_JUMP | IN_ACTION))
+		if (HandbrakeStarting && quad->Revs && !(input & (IN_JUMP | IN_ACTION)))
 		{
 			if (quad->Revs > 8)
 				quad->Revs -= quad->Revs >> 3;

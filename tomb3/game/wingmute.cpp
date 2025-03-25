@@ -24,7 +24,7 @@ static void TriggerWingMuteParticles(short item_number)
 	if (dx < -0x4000 || dx > 0x4000 || dz < -0x4000 || dz > 0x4000)
 		return;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sG = (GetRandomControl() & 0x3F) + 32;
 	sptr->sB = sptr->sG >> 1;

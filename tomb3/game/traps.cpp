@@ -558,7 +558,7 @@ void TriggerPendulumFlame(short item_number)
 	if (x < -0x4000 || x > 0x4000 || z < -0x4000 || z > 0x4000)
 		return;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = (GetRandomControl() & 0x1F) + 48;
 	sptr->sG = sptr->sR >> 1;

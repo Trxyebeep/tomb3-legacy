@@ -23,7 +23,7 @@ static void TriggerLizmanGas(long x, long y, long z, long xv, long yv, long zv, 
 	SPARKS* sptr;
 	long size;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = 0;
 	sptr->sG = (GetRandomControl() & 0x3F) + 128;

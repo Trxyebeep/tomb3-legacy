@@ -18,9 +18,9 @@ static void Trigger51BlastFire(long x, long y, long z, long smoke, long end)
 	long size;
 
 	if (end < 0)
-		sptr = &sparks[GetFreeSpark()];
+		sptr = &spark[GetFreeSpark()];
 	else
-		sptr = &sparks[end];
+		sptr = &spark[end];
 
 	sptr->On = 1;
 
@@ -110,7 +110,7 @@ static void Trigger51RocketSmoke(long x, long y, long z, long yv, long fire)
 	SPARKS* sptr;
 	long size;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 
 	if (fire)

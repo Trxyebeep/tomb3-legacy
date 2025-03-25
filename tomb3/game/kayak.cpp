@@ -1103,7 +1103,7 @@ static void TriggerRapidsMist(long x, long y, long z)
 {
 	SPARKS* sptr;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = 128;
 	sptr->sG = 128;

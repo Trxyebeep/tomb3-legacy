@@ -23,7 +23,7 @@ static short SplashRings[8][2] =
 	{-17, -17}
 };
 
-SPARKS sparks[192];
+SPARKS spark[192];
 static SP_DYNAMIC spark_dynamics[32];
 
 BAT_STRUCT bats[32];
@@ -115,7 +115,7 @@ void TriggerBreath(long x, long y, long z, long xv, long yv, long zv)
 {
 	SPARKS* sptr;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = 0;
 	sptr->sG = 0;
@@ -185,7 +185,7 @@ void TriggerFireFlame(long x, long y, long z, long body_part, long type)
 	if (dx < -0x4000 || dx > 0x4000 || dz < -0x4000 || dz > 0x4000)
 		return;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 
 	if (type == 2)
@@ -374,7 +374,7 @@ void TriggerFireSmoke(long x, long y, long z, long body_part, long type)
 	if (dx < -0x4000 || dx > 0x4000 || dz < -0x4000 || dz > 0x4000)
 		return;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = 0;
 	sptr->sG = 0;
@@ -456,7 +456,7 @@ void TriggerStaticFlame(long x, long y, long z, long size)
 	if (dx < -0x4000 || dx > 0x4000 || dz < -0x4000 || dz > 0x4000)
 		return;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = (GetRandomControl() & 0x3F) - 64;
 	sptr->sG = (GetRandomControl() & 0x3F) + 128;
@@ -504,7 +504,7 @@ void TriggerSideFlame(long x, long y, long z, long angle, long speed, long pilot
 	if (dx < -0x4000 || dx > 0x4000 || dz < -0x4000 || dz > 0x4000)
 		return;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = (GetRandomControl() & 0x1F) + 48;
 	sptr->sG = sptr->sR;
@@ -557,7 +557,7 @@ void TriggerRocketSmoke(long x, long y, long z, long c)
 	SPARKS* sptr;
 	uchar size;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = 0;
 	sptr->sG = 0;
@@ -612,7 +612,7 @@ void TriggerRicochetSpark(GAME_VECTOR* pos, long angle, long size)
 	long ang;
 	uchar c;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = 255;
 	sptr->sG = (GetRandomControl() & 0x1F) + 32;
@@ -645,7 +645,7 @@ void TriggerRicochetSpark(GAME_VECTOR* pos, long angle, long size)
 	sptr->dHeight = (GetRandomControl() & 1) + 1;
 	sptr->MaxYvel = 0;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	c = uchar((GetRandomControl() & 0x3F) + 128);
 	sptr->sR = c;
@@ -689,7 +689,7 @@ void TriggerBlood(long x, long y, long z, long angle, long num)
 
 	for (int i = 0; i < num; i++)
 	{
-		sptr = &sparks[GetFreeSpark()];
+		sptr = &spark[GetFreeSpark()];
 		sptr->On = 1;
 
 		if (gameflow.language == 2)
@@ -747,7 +747,7 @@ void TriggerBloodD(long x, long y, long z, long angle, long num)
 
 	for (int i = 0; i < num; i++)
 	{
-		sptr = &sparks[GetFreeSpark()];
+		sptr = &spark[GetFreeSpark()];
 		sptr->On = 1;
 
 		if (gameflow.language == 2)
@@ -861,7 +861,7 @@ void TriggerFlareSparks(long x, long y, long z, long xv, long yv, long zv, long 
 	if (dx < -0x4000 || dx > 0x4000 || dz < -0x4000 || dz > 0x4000)
 		return;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = 255;
 	sptr->sG = 255;
@@ -895,7 +895,7 @@ void TriggerFlareSparks(long x, long y, long z, long xv, long yv, long zv, long 
 
 	if (smoke)
 	{
-		smokeSpark = &sparks[GetFreeSpark()];
+		smokeSpark = &spark[GetFreeSpark()];
 		smokeSpark->On = 1;
 		smokeSpark->sR = sptr->dR >> 1;
 		smokeSpark->sG = sptr->dG >> 1;
@@ -949,7 +949,7 @@ void TriggerGunSmoke(long x, long y, long z, long xv, long yv, long zv, long ini
 	SPARKS* sptr;
 	uchar size;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = 0;
 	sptr->sG = 0;
@@ -1062,7 +1062,7 @@ void TriggerExplosionSparks(long x, long y, long z, long extras, long dynamic, l
 	if (dx < -0x4000 || dx > 0x4000 || dz < -0x4000 || dz > 0x4000)
 		return;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = 255;
 
@@ -1213,7 +1213,7 @@ void TriggerExplosionSmoke(long x, long y, long z, long uw)
 	if (dx < -0x4000 || dx > 0x4000 || dz < -0x4000 || dz > 0x4000)
 		return;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = 144;
 	sptr->sG = 144;
@@ -1266,7 +1266,7 @@ void TriggerExplosionSmokeEnd(long x, long y, long z, long uw)
 	if (dx < -0x4000 || dx > 0x4000 || dz < -0x4000 || dz > 0x4000)
 		return;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 
 	if (uw)
@@ -1349,7 +1349,7 @@ void TriggerShotgunSparks(long x, long y, long z, long xv, long yv, long zv)
 {
 	SPARKS* sptr;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = 255;
 	sptr->sG = 255;
@@ -1386,7 +1386,7 @@ void TriggerRocketFlame(long x, long y, long z, long xv, long yv, long zv, long 
 {
 	SPARKS* sptr;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = (GetRandomControl() & 0x1F) + 48;
 	sptr->sG = sptr->sR;
@@ -1449,7 +1449,7 @@ void TriggerWaterfallMist(long x, long y, long z, long ang)
 
 	for (int i = 0; i < 4; i++)
 	{
-		sptr = &sparks[GetFreeSpark()];
+		sptr = &spark[GetFreeSpark()];
 		sptr->On = 1;
 		sptr->sR = 128;
 		sptr->sG = 128;
@@ -1509,7 +1509,7 @@ void TriggerDartSmoke(long x, long y, long z, long xv, long zv, long hit)
 	if (dx < -0x4000 || dx > 0x4000 || dz < -0x4000 || dz > 0x4000)
 		return;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = 16;
 	sptr->sG = 8;
@@ -1606,7 +1606,7 @@ void TriggerExplosionBubble(long x, long y, long z, short room_number)
 	if (dx < -0x4000 || dx > 0x4000 || dz < -0x4000 || dz > 0x4000)
 		return;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = 128;
 	sptr->sG = 64;
@@ -1660,7 +1660,7 @@ void TriggerBubble(long x, long y, long z, long size, long sizerange, short fxNu
 	if (dx < -0x4000 || dx > 0x4000 || dz < -0x4000 || dz > 0x4000)
 		return;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = 0;
 	sptr->sG = 0;
@@ -1713,7 +1713,7 @@ void ControlSmokeEmitter(short item_number)
 	if (dx < -0x4000 || dx > 0x4000 || dz < -0x4000 || dz > 0x4000)
 		return;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = 0;
 	sptr->sG = 0;
@@ -1784,7 +1784,7 @@ void DetatchSpark(long num, long type)
 
 	for (int i = 0; i < 192; i++)
 	{
-		sptr = &sparks[i];
+		sptr = &spark[i];
 
 		if (sptr->On && sptr->Flags & type && sptr->FxObj == num)
 		{
@@ -1825,7 +1825,7 @@ long GetFreeSpark()
 	long free, min_life;
 
 	free = next_spark;
-	sptr = &sparks[next_spark];
+	sptr = &spark[next_spark];
 
 	for (int i = 0; i < 192; i++)
 	{
@@ -1833,7 +1833,7 @@ long GetFreeSpark()
 		{
 			if (free == 191)
 			{
-				sptr = &sparks[0];
+				sptr = &spark[0];
 				free = 0;
 			}
 			else
@@ -1854,7 +1854,7 @@ long GetFreeSpark()
 
 	for (int i = 0; i < 192; i++)
 	{
-		sptr = &sparks[i];
+		sptr = &spark[i];
 
 		if (sptr->Life < min_life && sptr->Dynamic == -1 && (!(sptr->Flags & SF_BLOOD) || i & 1))
 		{
@@ -1871,8 +1871,8 @@ void InitialiseSparks()
 {
 	for (int i = 0; i < 192; i++)
 	{
-		sparks[i].On = 0;
-		sparks[i].Dynamic = -1;
+		spark[i].On = 0;
+		spark[i].Dynamic = -1;
 	}
 
 	for (int i = 0; i < 4; i++)
@@ -1896,7 +1896,7 @@ void UpdateSparks()
 
 	for (int i = 0; i < 192; i++)
 	{
-		sptr = &sparks[i];
+		sptr = &spark[i];
 
 		if (!sptr->On)
 			continue;
@@ -2013,7 +2013,7 @@ void UpdateSparks()
 
 	for (int i = 0; i < 192; i++)
 	{
-		sptr = &sparks[i];
+		sptr = &spark[i];
 
 		if (!sptr->On || sptr->Dynamic == -1)
 			continue;

@@ -29,7 +29,7 @@ static void TriggerPunkFlame(short item_number)
 	if (dx < -0x4000 || dx > 0x4000 || dz < -0x4000 || dz > 0x4000)
 		return;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = 255;
 	sptr->sG = (GetRandomControl() & 0x1F) + 48;

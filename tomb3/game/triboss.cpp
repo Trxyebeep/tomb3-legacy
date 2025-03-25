@@ -216,7 +216,7 @@ void TriggerSummonSmoke(long x, long y, long z)
 {
 	SPARKS* sptr;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = 16;
 	sptr->sG = 64;
@@ -330,7 +330,7 @@ void TriggerElectricSparks(GAME_VECTOR* pos, long shield)
 	TrigDynamics[1].y = pos->y;
 	TrigDynamics[1].z = pos->z;
 	
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = 255;
 	sptr->sG = 255;

@@ -3163,7 +3163,7 @@ void S_DrawSparks()
 
 	for (int i = 0; i < 192; i++)
 	{
-		sptr = &sparks[i];
+		sptr = &spark[i];
 
 		if (!sptr->On)
 			continue;

@@ -19,7 +19,7 @@ static void TriggerFenceSparks(long x, long y, long z, long kill)
 {
 	SPARKS* sptr;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = (GetRandomControl() & 0x3F) + 192;
 	sptr->sG = sptr->sR;

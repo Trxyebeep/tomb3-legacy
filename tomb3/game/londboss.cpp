@@ -74,7 +74,7 @@ static void TriggerPlasmaBallFlame(short fx_number, long type, long xv, long yv,
 	if (dx < -0x4000 || dx > 0x4000 || dz < -0x4000 || dz > 0x4000)
 		return;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = 48;
 	sptr->sG = 255;

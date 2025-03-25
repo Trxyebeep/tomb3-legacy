@@ -30,7 +30,7 @@ static void TriggerPlasmaBallFlame(short fx_number, long type, long xv, long yv,
 	if (dx < -0x4000 || dx > 0x4000 || dz < -0x4000 || dz > 0x4000)
 		return;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = 48;
 	sptr->sG = (GetRandomControl() & 0x1F) + 48;
@@ -148,7 +148,7 @@ static void TriggerPlasma(short item_number)
 	if (dx < -0x4000 || dx > 0x4000 || dz < -0x4000 || dz > 0x4000)
 		return;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = 48;
 	sptr->sG = (GetRandomControl() & 0x1F) + 48;

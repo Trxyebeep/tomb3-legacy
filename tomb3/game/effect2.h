@@ -43,7 +43,7 @@ void TriggerBats(long x, long y, long z, short ang);
 void BatEmitterControl(short item_number);
 void UpdateBats();
 
-extern SPARKS sparks[192];
+extern SPARKS spark[192];
 extern BAT_STRUCT bats[32];
 extern SPLASH_STRUCT splashes[4];
 extern RIPPLE_STRUCT ripples[16];

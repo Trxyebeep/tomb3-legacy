@@ -21,7 +21,7 @@ static void TriggerElectricSparks(PHD_VECTOR* pos, short item_number, short Node
 	if (dx < -0x5000 || dx > 0x5000 || dz < -0x5000 || dz > 0x5000)
 		return;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = (GetRandomControl() & 0x3F) + 192;
 	sptr->sG = sptr->sR;

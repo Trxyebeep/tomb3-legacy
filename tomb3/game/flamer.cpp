@@ -30,7 +30,7 @@ static void TriggerPilotFlame(short item_number)
 	if (dx < -0x4000 || dx > 0x4000 || dz < -0x4000 || dz > 0x4000)
 		return;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = (GetRandomControl() & 0x1F) + 48;
 	sptr->sG = sptr->sR;
@@ -72,7 +72,7 @@ static void TriggerFlamethrowerFlame(long x, long y, long z, long xv, long yv, l
 	SPARKS* sptr;
 	uchar size;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = (GetRandomControl() & 0x1F) + 48;
 	sptr->sG = sptr->sR;

@@ -900,7 +900,7 @@ static void TriggerSubMist(long x, long y, long z, long speed, short angle)
 {
 	SPARKS* sptr;
 
-	sptr = &sparks[GetFreeSpark()];
+	sptr = &spark[GetFreeSpark()];
 	sptr->On = 1;
 	sptr->sR = 0;
 	sptr->sG = 0;
